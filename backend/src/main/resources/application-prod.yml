@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://39.107.33.81:3306/family_assistant?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
-    password: root
+    password: root123
   data:
     redis:
       host: 39.107.33.81
@@ -18,7 +18,7 @@ mybatis-plus:
 app:
   upload-dir: /data/family/uploads
   file-base-url: http://39.107.33.81:8080/api/files
-  cors-origins: http://39.107.33.81,http://39.107.33.81:*
+  cors-origins: http://39.107.33.81,http://39.107.33.81:*,http://localhost:*,http://127.0.0.1:*
 
 jwt:
   secret: family-prod-jwt-secret-39-107-33-81-2026-ok
