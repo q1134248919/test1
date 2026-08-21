@@ -1,4 +1,4 @@
-FROM maven:3.9.9-eclipse-temurin-17 AS build
+FROM mirror.ccs.tencentyun.com/library/maven:3.9-eclipse-temurin-8 AS builder
 WORKDIR /src
 COPY pom.xml .
 COPY src ./src
