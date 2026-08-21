@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://39.107.33.81:3306/family_assistant?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  data:
+    redis:
+      host: 39.107.33.81
+      port: 6379
+      password: MyRedisPass123
+      database: 0
+      timeout: 3000ms
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+
+app:
+  upload-dir: /data/family/uploads
+  file-base-url: http://39.107.33.81:8080/api/files
+  cors-origins: http://39.107.33.81,http://39.107.33.81:*
+
+jwt:
+  secret: family-prod-jwt-secret-39-107-33-81-2026-ok
